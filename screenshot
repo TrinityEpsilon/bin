@@ -1,0 +1,3 @@
+#!/bin/bash
+
+import -window root /home/jeff/Pictures/screenshot.jpg

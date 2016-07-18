@@ -1,0 +1,8 @@
+#!/bin/sh
+
+while :
+do
+    clear
+    echo $(acpi) " | " $(date)
+    sleep 1
+done

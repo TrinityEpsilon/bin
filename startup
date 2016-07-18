@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# mouse settings (self explanatory)
+synclient HorizTwoFingerScroll=1
+synclient TapButton1=1
+syncleint TapButton2=1
+
+# adding home directory to $PATH
+# $PATH = $PATH:/home/jeff/bin
+# DOES NOT WORK; no need to find alternative solution as manual isn't TOO bad
+
+# muting the damn beep
+amixer -c 0 set Beep mute
+# setting sound defaults to mute
+# amixer -c 2 set Master mute
+# amixer -c 2 set Headphone mute
+amixer -c 2 set Speaker mute
+amixer -c 2 set Beep mute
+
+# desktop clock
+conky

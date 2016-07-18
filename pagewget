@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo domain name:
+echo   ex. if I\m downloading learnc.org/textbook I would put down learnc.org
+
+read domain
+
+echo download page:
+
+read page
+
+wget --recursive --no-clobber --page-requisites --html-extension --convert-links --restrict-file-names=windows --domains $domain --no-parent $page 
